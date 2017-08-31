@@ -1,0 +1,30 @@
+locale: en_US
+select-tool: 289 #powder
+remove-tool: 353 #sugar
+chestset:
+  example: #Type name
+    min: 1 #The minimum number of possible loot
+    max: 3 #Maximum possible loot
+    customname: "Example"
+    powered: false #Turn on redstone control
+    break: false #Include the destruction of chests
+    respawn: [15, 30, 45] #Time in seconds through which to put things respawn
+    items:
+      - id: 268 # item id
+        durability: -1 #If -1 then the breakdown will be random
+        random-enchant: false #Include random enchantment
+        enchantments:
+          - name: KNOCKBACK #Type of enchantment
+            level: 1 #Enchantment level
+        name: "My Sword" #A new name for things
+        lore: ["Line 1", "Line 2", "Line 3"] #Description of things
+        amount: 1 #amount
+      - id: 373
+        potion-type: INSTANT_HEAL #Potion type
+        potion-level: 2 #Potion level
+        potion-splash: false #To make an explosive potion
+      - id: 35
+        data: 14 #Thing data
+        amount: 5
+      - id: 397
+        skull: "Notch" #Nickname of the owner of the head

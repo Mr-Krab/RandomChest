@@ -1,0 +1,19 @@
+name: RandomChest
+main: mr_krab.randomchest.Plugin
+version: 3.1.0
+author: Skype taras-oleksenko
+update: Mr_Krab
+commands:
+   chest:
+      usage: /<command>
+      permission: randomchest.admin
+      description: ...
+permissions:
+    randomchest.*:
+        children:
+            randomchest.use: true
+            randomchest.admin: true
+    randomchest.use:
+        default: op
+    randomchest.admin:
+        default: op
